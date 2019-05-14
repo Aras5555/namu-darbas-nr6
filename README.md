@@ -1,0 +1,1 @@
+# namu-darbas-nr6
