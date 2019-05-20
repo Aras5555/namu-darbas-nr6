@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *   {box-sizing: border-box;}
+    form {display: inline-block;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid black;
+        border-radius: 2px;
+        box-sizing: border-box;
+        background: papayawhip}
+    .row {display: table;
+        clear:both;
+        background: deepskyblue;}
+    .s {border: 1px solid blue;
+        border-radius: 4px;
+        box-sizing: border-box;padding:5px 5px 5px 0;
+        ;cursor: pointer; clear: both;
+        margin-left: 15em;}
+    label {position: absolute;}
+    sub:hover {background: blue;
+                color:greenyellow;}
+
+</style>
+<body>
+
+
+
+
+<header>
+    <form action="/action_page.php">
+        <div class="row">
+               <label>Title</label>
+                <input class="s" type="text" name="Title" required value="Select one or enter your own">
+               <br>
+               <label>Name</label>
+               <input class="s" type="text" name="Name" required value="Required">
+               <br>
+               <label>Phone number</label>
+               <input class="s" type="tel" value="+370 ........">(optional
+               <br>
+               <label>Email address</label>
+               <input class="s" type="email"  value="Required">
+               <br>
+               <label>Your website</label>
+               <input class="s" type="text" value="www.yoursite.com">(optional)
+               <br>
+               <label>Nr. of items to order</label>
+               <input class="s" type="number" name="quantity" min="1" max="10"> (1-10)
+               <br>
+               <label>Lenght</label>
+               <input class="s" type="range" name="points" min="0" max="10"><input type="submit">
+                1m (in 10cm increments)
+               <br>
+               <label>Delivery date</label>
+               <input class="s" type="date" value="20019-15-20">(minimum 16 december 2010)
+               <br>
+               <label>Time of delivery</label>
+               <input class="s" type="time" step="30" value="00:00">(in 30 min increments)
+               <br>
+               <label>Color of the item</label>
+               <input class="s" type="color" value="red">(default red)
+               <br><br>
+            <div class="sub" style="margin-left:60px;">
+               <input style="width:100px" class="s" type="submit">
+               <br>
+             </div>
+
+        </div>
+    </form>
+</header>
+
+
+
+</body>
+</html>
