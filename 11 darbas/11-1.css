@@ -1,0 +1,115 @@
+@media only screen and (max-width: 600px) {
+    .nav {display: none;}  }
+
+
+* {box-sizing: border-box;
+    font-family:Amatic SC;}
+
+.f1 {text-decoration: none;
+    padding:8px;color:white;
+    float: left;width:10%;}
+
+.f1bu:hover{color:lightcyan;
+    background-color:gray;}
+
+.the:hover{color: green;
+     background: black;}
+
+.nav {text-align: center;
+    font-size:24px;
+    width:100%;
+    float: left;
+    background:black;
+    position: fixed;
+    top:0;
+    padding: 20px;
+    opacity:0.7;}
+
+.img2 { background-image: url("../img/Pizza1.jpg");
+    object-fit: cover;
+    width:100%;
+    height:700px;
+    position: relative;
+    float: left;}
+
+.crust { top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+    text-align: center;}
+
+.font {color:white;
+    font-size:15vw;}
+
+.let {background: black;
+    color: white;
+    font-size:6vw;
+    text-decoration: none;
+    padding:20px;
+    margin-top:50px;}
+
+.let1:hover{background: gray;
+           color:black;}
+
+.open { background: black;
+        color: white;
+        font-size: 24px;
+        float:left;
+        padding-left: 8px;
+        padding-right: 8px;}
+
+.menu {background: black;
+       width:100%;
+       float: left;
+       color:white;
+       text-align: center;}
+
+.center {top: 50%;
+        left: 50%;
+       transform: translate(-50%, -50%);}
+
+li {display: inline-block;
+    background: black;width:33%;
+    font-size: 5vw;
+    color: white;
+    padding:10px;
+    text-align: center;}
+
+a {color:white;
+    text-decoration: none;}
+
+.li:hover{background: red;
+    color: white;}
+
+p {font-size: 30px;
+    color: gray;}
+
+.s {float: right;
+    background: gray;
+    border-radius: 4px;
+    padding: 10px;}
+
+.s1 {padding: 10px;
+    border-radius: 4px;}
+
+.img1 {float:right;
+    border-radius: 50%;
+    margin-bottom:15%;
+    margin-right:15%;}
+
+.p1 {color:white;}
+
+input {padding: 20px;
+     width:96%;margin-left: 2%;
+     font-size:x-large;}
+
+button {padding: 15px;
+    width:96%;
+    margin-left: 2%;
+    font-size:x-large;
+    overflow: hidden;}
+
+#bot{position: absolute;
+    bottom: 10px;
+    left:20px;}
+

@@ -1,0 +1,23 @@
+$variable: red;
+$variable2: blue;
+
+
+body {
+  background: $variable;
+  color: $variable2;
+  padding: 15px;
+}
+
+ul {
+  li {
+    border: 1px solid black;
+
+    a {
+      color: $variable;
+
+      span {
+        font-weight: bold;color ;white;
+      }
+    }
+  }
+
