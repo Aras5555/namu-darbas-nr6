@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skaiciuoklis JS</title>
+  <script src="scripts.js" ></script>
+    <style>
+        * {box-sizing: border-box;}
+        form {display: inline-block;
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid black;
+            border-radius: 2px;
+            box-sizing: border-box;}
+        .s {border: 1px solid blue;
+            border-radius: 4px;
+            box-sizing: border-box;padding:5px 5px 5px 0;
+            ;cursor: pointer; clear: both;
+            margin-left: 15em;}
+        .row {display: table;
+            clear:both;
+            background: deepskyblue;}
+        label {position: absolute;}
+        .but {color: white;background: red;}
+        .but2:hover {color:white;
+             background:green;}
+
+    </style>
+</head>
+<body>
+  <form class="row" name="formacalc">
+      <label>Plotis</label>
+      <input class="s" type="text" name="txtnum1">
+      <br>
+      <label>Aukštis</label>
+      <input class="s" type="text" name="txtnum2">
+      <br><br>
+      <label style="color: white;font-size: 2vw;">Atsakymai</label>
+      <br><br>
+      <label>Plotas</label>
+      <input class="s" type="text" name="txtplot">
+      <br>
+      <label>Perimetras</label>
+      <input class="s" type="text" name="txtper">
+      <br>
+      <label>Istrižainė</label>
+      <input class="s" type="text" name="txtist">
+
+
+      <input class="but but2" type="button" value="Skaičiuoti" onclick="sumValues()">
+  </form>
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript">
+    function sumValues(){
+    let num1,num2,plot,per,ist;
+        num1=Number(document.formacalc.txtnum1.value);
+        num2=Number(document.formacalc.txtnum2.value);
+        plot= num1 * num2;
+        document.formacalc.txtplot.value=plot;
+        per= 2* ( num1 + num2);
+        document.formacalc.txtper.value=per;
+        ist= Math.sqrt((num1**2)+(num2**2));
+        document.formacalc.txtist.value=ist;
+    }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
