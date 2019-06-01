@@ -16,7 +16,8 @@ function f() {document.getElementById("S").innerHTML= S;
  console.log(S);
  console.log(P);
  console.log(d);
-
+var txt ="";
+var  sln = txt.length
 
 
 

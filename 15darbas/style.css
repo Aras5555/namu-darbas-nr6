@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 96vw;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.square {
+    min-height: 12vw;
+    width: 12vw;
+}
+
+.brown {
+    background-color: #8b4513;
+}
+
+.tan {
+    background-color: #cd853f;
+}

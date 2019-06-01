@@ -29,12 +29,12 @@
     </style>
 </head>
 <body>
-  <form class="row" name="formacalc">
+  <form class="row" name="calc">
       <label>Plotis</label>
-      <input class="s" type="text" name="txtnum1">
+      <input class="s" type="text" name="width">
       <br>
       <label>Aukštis</label>
-      <input class="s" type="text" name="txtnum2">
+      <input class="s" type="text" name="height">
       <br><br>
       <label style="color: white;font-size: 2vw;">Atsakymai</label>
       <br><br>
@@ -48,8 +48,25 @@
       <input class="s" type="text" name="txtist">
 
 
-      <input class="but but2" type="button" value="Skaičiuoti" onclick="sumValues()">
+      <input class="but but2" type="button" value="Skaičiuoti" onclick="calc()">
   </form>
+  <script>
+      function calc() {
+          var width = Number(document.calc.width.value);
+
+          var height = Number(document.calc.height.value);
+
+          // Plotas
+          document.calc.txtplot.value = width * height;
+
+          // Perimetras
+          document.calc.txtper.value = 2 * (width + height);
+
+          // Istrizaine
+          document.calc.txtist.value = Math.sqrt((width ** 2) + (height ** 2));
+          console.log(height)
+      }
+  </script>
 
 
 
@@ -59,19 +76,7 @@
 
 
 
- <script type="text/javascript">
-    function sumValues(){
-    let num1,num2,plot,per,ist;
-        num1=Number(document.formacalc.txtnum1.value);
-        num2=Number(document.formacalc.txtnum2.value);
-        plot= num1 * num2;
-        document.formacalc.txtplot.value=plot;
-        per= 2* ( num1 + num2);
-        document.formacalc.txtper.value=per;
-        ist= Math.sqrt((num1**2)+(num2**2));
-        document.formacalc.txtist.value=ist;
-    }
-</script>
+
 
 
 
