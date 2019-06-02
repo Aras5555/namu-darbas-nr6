@@ -1,0 +1,30 @@
+.row {
+    position:relative ;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.clear {
+    clear: both;
+}
+.white, .black {
+    border: 1px solid black;
+    width:8%;
+    height:80px;
+    background: white;
+    float: left;
+}
+.white {
+    background: white;
+
+}
+.black {
+    background:black;
+}
+
+#container {
+    width:100%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
