@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="container">
+    <h1 class="psk1">Slaptažodžio keitimo forma</h1>
+    <form class="form-horizontal" name="formValid" id="psw" onsubmit="return passMatch(),validateForm()">
+        <div>
+            <label class="col-sm-3 psk control-label">Įveskite naują slaptažodį</label>
+            <div class="col-sm-5">
+                <input type="password" name="pas1"class="form-control">
+                <span class="form-control-feedback"></span>
+            </div>
+        </div>
+        <div>
+            <label class="col-sm-3 psk control-label">Pakartokite slaptažodį</label>
+            <div class="col-sm-5">
+                <input type="password" name="pas2"class="form-control">
+                <span class="form-control-feedback"></span>
+            </div>
+
+        </div>
+            <input class="sub psk" name="valid" type="submit" value="Pateikti">
+
+
+            <div id="load">
+                <div class="center">
+                    <div class="psk">Palaukite, slaptažodis keičiamas</div>
+                    <div class="spinner-grow text-muted"></div>
+                    <div class="spinner-grow text-primary"></div>
+                    <div class="spinner-grow text-success"></div>
+                    <div class="spinner-grow text-info"></div>
+                    <div class="spinner-grow text-warning"></div>
+                    <div class="spinner-grow text-danger"></div>
+                    <div class="spinner-grow text-secondary"></div>
+                    <div class="spinner-grow text-dark"></div>
+                    <div class="spinner-grow text-light"></div>
+                    <div class="spinner-grow text-warning"></div>
+                    <div class="spinner-grow text-muted"></div>
+                </div>
+                <div class="loader"></div>
+            </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="17-2java.js"></script>
+
+
+</body>
+</html>
