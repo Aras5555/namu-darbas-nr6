@@ -1,0 +1,19 @@
+.style {
+    font-size: x-large;
+    font-family: Georgia;
+    background: #9f9f9f;
+    color: white;
+}
+table,th,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 5px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
